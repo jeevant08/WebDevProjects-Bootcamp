@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container2{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 329px 207px 162px 50px;
+      grid-template-rows: 423px 140px 164px 20px;
+      grid-gap: 0;
+    }
+    .item{
+      border: 9px solid black;
+      background-color: aliceblue;
+    }
+    
+    .bro1{
+      background-color: red;
+      border-top: 0;
+      border-left: 0px;
+      order:-999;
+    }
+    .bro2{
+      grid-column: span 3;
+      order: -998;
+      border-right:0;
+      border-left: 0;
+      border-top: 0;
+    }
+    .bro3{
+      grid-row: span 2;
+      order: -997;
+      border-top: 0;
+      border-left: 0;
+    }
+    .bro4{
+      order:-996;
+      grid-row:span 2;
+      grid-column: span 2;
+      border-left:0 ;
+      border-top: 0;
+    
+    }
+    .bro5{
+      background-color: rgb(46, 17, 151);
+      border-left:0 ;
+      border-top:0 ;
+      border-right: 0;
+      border-bottom: 20px solid black;
+    }
+    .bro6{
+      grid-row: span 2;
+      border: 0;
+    }
+
+    .bro7{
+      border-bottom: 0;
+      border-left: 0;
+      border-top: 0;
+    }
+
+    .bro8{
+      background-color: rgb(255, 220, 48);
+      border-bottom: 0;
+      border-left: 0;
+      border-top: 0;
+    }
+    .bro9{
+      background-color: rgb(63, 58, 58);
+      border-bottom: 0;
+      border-top: 0;
+      border-left: 0;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="container2">
+      <div class="item bro1"></div>
+      <div class="item bro2"></div>
+      <div class="item bro3"></div>
+      <div class="item bro4"></div>
+      <div class="item bro5" id="ye"></div>
+      <div class="item bro6"></div>
+      <div class="item bro7"></div>
+      <div class="item bro8"></div>
+      <div class="item bro9"></div>
+   </div>
+  </div>
+   
+</body>
+
+</html>
