@@ -1,0 +1,88 @@
+body,html{
+    margin:0;
+    padding: 0;
+}
+
+.front{
+    
+    height: 100vh;
+    background-color: #19183B;
+}
+.middle{
+    height: 100vh;
+    background-color: #708993;
+}
+.back{
+    height: 10vh;
+    background-color: #A1C2BD;
+}
+a{
+    font-family:'Ubuntu', sans-serif ;
+    font-weight: 700;
+    text-decoration: none;
+    color:#E7F2EF;
+    font-size: large;
+}
+.flcontainer{
+    padding-right:30px ;
+    height: 50px;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+}
+.frontText{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75%;
+}
+
+#header{
+    color: #E7F2EF;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 500%;
+    font-weight: 500;
+}
+p,h1{
+    color: #E7F2EF;
+    font-family:'Ubuntu',sans-serif ;
+}
+.centering{
+    display: flex;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin:0;
+    text-align: center;
+    padding: 100px;
+}
+
+.MidContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    width: 500px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+.MidContainer img{
+    width: 100px;
+    filter: hue-rotate(10deg) invert(100%);
+    border-radius: 8px;
+}
+
+.imgcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
